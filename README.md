@@ -4,8 +4,6 @@ My Vim/Neovim related stuffs
 
 ## Directory Structure
 
-### Neovim
-
 **For Unix-like Operating Systems:**
 
 - $HOME/.config/nvim/init.vim
