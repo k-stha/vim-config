@@ -1,11 +1,7 @@
-if has('win32') && has('nvim')
+if has("win32")
   let SNIPPET_DIR="$HOME\AppData\Local\nvim-data\site\snippet\sh\"
-elseif has('nvim')
-  let SNIPPET_DIR="$HOME/.local/share/nvim/site/snippet/sh/"
-elseif has('win32')
-  let SNIPPET_DIR="$HOME\vimfiles\snippet\sh\"
 else
-  let SNIPPET_DIR="$HOME/.vim/snippet/sh/"
+  let SNIPPET_DIR="$HOME/.local/share/nvim/site/snippet/sh/"
 endif
 
 nnoremap <Leader>scr :execute "read "  . SNIPPET_DIR . "check_root.snippet"<CR>
