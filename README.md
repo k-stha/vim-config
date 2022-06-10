@@ -4,6 +4,8 @@ My Vim/Neovim related stuffs
 
 ## Directory Structure
 
+### Neovim
+
 **For Unix-like Operating Systems:**
 
 - $HOME/.config/nvim/init.vim
@@ -17,3 +19,13 @@ My Vim/Neovim related stuffs
 - $HOME\AppData\Local\nvim\after\
 - $HOME\AppData\Local\nvim-data\site\plugin\
 - $HOME\AppData\Local\nvim-data\site\snippet\
+
+### Vim
+
+**For Unix-like Operating Systems:**
+
+- $HOME/.vimrc
+
+**For Windows:**
+
+- $HOME\\_vimrc
