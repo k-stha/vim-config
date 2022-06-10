@@ -11,6 +11,8 @@ let g:loaded_ruby_provider = 0
 let g:loaded_node_provider = 0
 let g:loaded_perl_provider = 0
 
+colorscheme my_preferred
+
 set noloadplugins
 set secure
 set guicursor=
@@ -22,16 +24,8 @@ set hidden
 set omnifunc=syntaxcomplete#Complete
 set list listchars=tab:>-
 
-highlight Number ctermfg=white guifg=white
-highlight String ctermfg=white guifg=white
-highlight SpellLocal ctermfg=black guifg=black
-highlight Visual ctermfg=black ctermbg=white guifg=black guibg=white
-highlight Pmenu ctermfg=white ctermbg=DarkMagenta guifg=black guibg=Magenta
-highlight PmenuSel ctermfg=white ctermbg=black guifg=white guibg=black
-
 " Highlight Unwanted Whitespaces
 " Taken from: https://vim.fandom.com/wiki/Highlight_unwanted_spaces
-highlight ExtraWhitespace ctermbg=green guibg=green
 match ExtraWhitespace /\s\+$/
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/

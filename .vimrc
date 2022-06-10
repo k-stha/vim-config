@@ -1,3 +1,11 @@
+if has("win32")
+  set runtimepath^=~\AppData\Local\nvim runtimepath+=~\AppData\Local\nvim\after
+else
+  set runtimepath^=~/.config/nvim runtimepath+=~/.config/nvim/after
+endif
+
+let &packpath = &runtimepath
+
 if has('win32')
   source $HOME\AppData\Local\nvim\init.vim
 else
