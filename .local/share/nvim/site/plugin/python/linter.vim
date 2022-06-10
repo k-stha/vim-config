@@ -24,7 +24,7 @@ function! UsePythonLinter()
   elseif option == 2
     setlocal makeprg=flake8\ --doctests\ --max-complexity\ 10
   elseif option == 3
-    setlocal makeprg=mypy\ --strict --namespace-packages\ --show-error-context\
+    setlocal makeprg=mypy\ --strict\ --namespace-packages\ --show-error-context\
           \ --show-column-numbers\ --show-error-codes\ --show-absolute-path\
           \ --no-incremental\ --no-silence-site-packages\ --disallow-any-unimported\
           \ --disallow-any-expr\ --disallow-any-decorated\ --disallow-any-explicit\
