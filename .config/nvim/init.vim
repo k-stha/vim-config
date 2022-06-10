@@ -20,6 +20,7 @@ set noswapfile noshelltemp
 set ignorecase smartcase
 set hidden
 set omnifunc=syntaxcomplete#Complete
+set list listchars=tab:>-
 
 highlight Number ctermfg=white guifg=white
 highlight String ctermfg=white guifg=white

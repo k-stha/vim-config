@@ -4,12 +4,8 @@ setlocal colorcolumn=80
 setlocal makeprg=shellcheck\ -a\ --format=gcc\ --enable=all
 nnoremap <silent> <Leader><CR> :lmake %<CR>
 
-if has('win32') && has('nvim')
+if has('win32')
   source $HOME\AppData\Local\nvim-data\site\plugin\sh\sh_snippet.vim
-elseif has('nvim')
-  source $HOME/.local/share/nvim/site/plugin/sh/sh_snippet.vim
-elseif has('win32')
-  source $HOME\vimfiles\plugin\sh\sh_snippet.vim
 else
-  source $HOME/.vim/plugin/sh/sh_snippet.vim
+  source $HOME/.local/share/nvim/site/plugin/sh/sh_snippet.vim
 endif
