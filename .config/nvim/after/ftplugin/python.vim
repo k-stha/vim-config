@@ -7,4 +7,4 @@ else
   source $HOME/.local/share/nvim/site/plugin/python/checker.vim
 endif
 
-nnoremap <silent> <Leader><CR> :call UsePythonLinter()<CR>
+nnoremap <silent> <Leader><CR> :call UsePythonChecker()<CR>

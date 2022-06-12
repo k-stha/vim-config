@@ -1,18 +1,18 @@
-function! UsePythonLinter()
+function! UsePythonChecker()
 
-  let linters = [ "pylint", "flake8", "mypy" ]
+  let checkers = [ "pylint", "flake8", "mypy" ]
 
-  echo "Available Linters:\n\n"
+  echo "Available Checkers:\n\n"
 
   let i = 1
 
-  for linter in linters
-    echo i . ": " . linter
+  for checker in checkers
+    echo i . ": " . checker
     let i = i + 1
   endfor
 
   call inputsave()
-  let option = input("\nWhich linter do you want to use: ")
+  let option = input("\nWhich checker do you want to use: ")
   call inputrestore()
 
   echo "\n\n"
@@ -31,7 +31,7 @@ function! UsePythonLinter()
           \ --disallow-any-expr\ --disallow-any-decorated\ --disallow-any-explicit\
           \ --warn-incomplete-stub\ --warn-unreachable\ --no-color-output
   else
-    echo "Linter not on the list!"
+    echo "Checker not on the list!"
     return
   endif
 
