@@ -29,7 +29,8 @@ function! UsePythonChecker()
           \ --show-column-numbers\ --show-error-codes\ --show-absolute-path\
           \ --no-incremental\ --no-silence-site-packages\ --disallow-any-unimported\
           \ --disallow-any-expr\ --disallow-any-decorated\ --disallow-any-explicit\
-          \ --warn-incomplete-stub\ --warn-unreachable\ --no-color-output
+          \ --warn-incomplete-stub\ --warn-unreachable\ --no-color-output\
+          \ --no-error-summary
   else
     echo "Checker not on the list!"
     return
