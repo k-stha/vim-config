@@ -1,12 +1,11 @@
-SCRIPT="${0##*/}"
-
 # Display help menu.
 # Arguments and Variables:
-#     ${SCRIPT}: Name of the script
+#     ${1}: Name of the script
 display_help() {
-    printf "%s\n" "Usage: ${SCRIPT} [OPTION...]
+    printf "%s" "Usage: ${1} [OPTION...]
 short_description_of_script
 
 Options:
-  -h, --help            Display this help and exit"
+  -h, --help            Display this help and exit
+"
 }

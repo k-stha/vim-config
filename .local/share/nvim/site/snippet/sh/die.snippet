@@ -1,7 +1,8 @@
 # Redirect error message to stderr and exit with error code.
 # Arguments and Variables:
-#     $*: Error Message
+#     ${1}: Exit Status
+#     ${2}: Error Message
 die() {
-    printf "%s\n" "$*" >&2
-    exit 1
+    printf "%s\n" "${2}" >&2
+    exit "${1}"
 }
