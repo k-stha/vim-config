@@ -3,8 +3,7 @@ script_name="script_name"
 while [ "$#" -gt 0 ]; do
     case "${1}" in
         -h|--help)
-            display_help "${script_name}"
-            exit 0
+            display_help "${script_name}" && exit 0
             ;;
         -*)
             die 1 "Invalid option: ${1}"
